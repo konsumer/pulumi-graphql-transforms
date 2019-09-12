@@ -2,18 +2,27 @@
   "name": "pulumi-graphql-transforms",
   "version": "0.0.0",
   "description": "Use amplify transforms in pulumi to create AWS resources.",
-  "main": "index.js",
-  "directories": {
-    "example": "example"
-  },
+  "main": "dist/pulumi-graphql-transforms.js",
+  "source": "src/index.js",
+  "module": "dist/pulumi-graphql-transforms.mjs",
+  "unpkg": "dist/pulumi-graphql-transforms.umd.js",
+  "files": [
+    "dist/pulumi-graphql-transforms.js",
+    "dist/pulumi-graphql-transforms.mjs",
+    "dist/pulumi-graphql-transforms.umd.js",
+    "dist/pulumi-graphql-transforms.js.map",
+    "dist/pulumi-graphql-transforms.mjs.map",
+    "dist/pulumi-graphql-transforms.umd.js.map"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "microbundle",
+    "dev": "microbundle watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/konsumer/pulumi-graphql-transforms.git"
   },
-  "keywords": [],
+  "keywords": ["pulumi","appsync", "graphql", "amplify"],
   "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
   "license": "MIT",
   "bugs": {
