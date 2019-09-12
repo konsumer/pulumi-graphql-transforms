@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "build": "microbundle",
-    "dev": "microbundle watch"
+    "dev": "microbundle watch",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
