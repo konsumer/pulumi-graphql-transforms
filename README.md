@@ -61,4 +61,4 @@ This will create a bunch of authenticated, linked, and fancy CRUD functions for 
 
 In your Graphql you can use [all the amplify directives](https://aws-amplify.github.io/docs/cli-toolchain/graphql) and you can also put `${env}` in your schema, or `${project}` and it will be replaced with pulumi's `getStack` and `getProject`. All resources are automatically setup like this: `${project}_name_type_${env}`, but it can be handy for parameters like `@function` which are not automatically prefixed on creation.
 
-For a full example that uses Auth0 OAuth, connected models, and has example Pulumi config see `example/`.
+For a full example that uses Auth0 OAuth, connected models, and has example Pulumi config see `packages/example/`.

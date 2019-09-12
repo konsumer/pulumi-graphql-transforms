@@ -7,7 +7,7 @@ import AppSyncConnectionTransformer from 'graphql-connection-transformer'
 import AppSyncAuthTransformer from 'graphql-auth-transformer'
 import { getStack, getProject } from '@pulumi/pulumi'
 
-type TranformOut = {
+type TranformOutput = {
   schema: string,
   resources: Resources
 }
@@ -22,7 +22,7 @@ type Resources = {
  * 
  * @param typeDefs A graphql SDL string of your models & API
  */
-export const transform = (typeDefs: string): TranformOut => {
+export const transform = (typeDefs: string): TranformOutput => {
   const transformer = new GraphQLTransform({
     transformers: [
       new AppSyncDynamoDBTransformer(),

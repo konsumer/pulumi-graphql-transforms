@@ -1,0 +1,51 @@
+{
+  "name": "pulumi-graphql-transforms",
+  "version": "0.0.0",
+  "description": "Use amplify transforms in pulumi to create AWS resources.",
+  "source": "src/index.ts",
+  "main": "dist/pulumi-graphql-transforms.js",
+  "module": "dist/pulumi-graphql-transforms.mjs",
+  "unpkg": "dist/pulumi-graphql-transforms.umd.js",
+  "files": [
+    "dist/pulumi-graphql-transforms.js",
+    "dist/pulumi-graphql-transforms.mjs",
+    "dist/pulumi-graphql-transforms.umd.js",
+    "dist/pulumi-graphql-transforms.js.map",
+    "dist/pulumi-graphql-transforms.mjs.map",
+    "dist/pulumi-graphql-transforms.umd.js.map"
+  ],
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konsumer/pulumi-graphql-transforms.git"
+  },
+  "keywords": [
+    "pulumi",
+    "appsync",
+    "graphql",
+    "amplify"
+  ],
+  "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/konsumer/pulumi-graphql-transforms/issues"
+  },
+  "homepage": "https://github.com/konsumer/pulumi-graphql-transforms#readme",
+  "devDependencies": {
+    "microbundle": "latest"
+  },
+  "dependencies": {
+    "@pulumi/aws": "latest",
+    "@pulumi/pulumi": "latest",
+    "graphql-auth-transformer": "latest",
+    "graphql-connection-transformer": "latest",
+    "graphql-dynamodb-transformer": "latest",
+    "graphql-elasticsearch-transformer": "latest",
+    "graphql-function-transformer": "latest",
+    "graphql-transformer-core": "latest"
+  }
+}
