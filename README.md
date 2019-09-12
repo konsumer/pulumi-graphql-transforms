@@ -46,6 +46,7 @@ type Comment @model @auth(rules: [{allow: owner }]) {
 const { schema, resources } = transform(typeDefs)
 
 // feel free to modify anything before you commit
+// you can also just use schema if you want to implement all your own stuff
 
 // make an appsync api
 const api = new appsync.GraphQLApi(`${getProject()}_graphql_${getStack()}`, { schema })
@@ -56,7 +57,7 @@ commit(api, resources)
 // feel free to add more resources or whatever here
 ```
 
-This will create a bunch of authenticated, linked, and fancy CRUD fucntions for you.
+This will create a bunch of authenticated, linked, and fancy CRUD functions for you.
 
 In your Graphql you can use [all the amplify directives](https://aws-amplify.github.io/docs/cli-toolchain/graphql) and you can also put `${env}` in your schema, or `${project}` and it will be replaced with pulumi's `getStack` and `getProject`. All resources are automatically setup like this: `${project}_name_type_${env}`, but it can be handy for parameters like `@function` which are not automatically prefixed on creation.
 

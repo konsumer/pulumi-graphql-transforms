@@ -2,7 +2,7 @@
   "name": "pulumi-graphql-transforms",
   "version": "0.0.0",
   "description": "Use amplify transforms in pulumi to create AWS resources.",
-  "source": "src/index.js",
+  "source": "src/index.ts",
   "main": "dist/pulumi-graphql-transforms.js",
   "module": "dist/pulumi-graphql-transforms.mjs",
   "unpkg": "dist/pulumi-graphql-transforms.umd.js",
@@ -37,5 +37,15 @@
   "homepage": "https://github.com/konsumer/pulumi-graphql-transforms#readme",
   "devDependencies": {
     "microbundle": "latest"
+  },
+  "dependencies": {
+    "@pulumi/aws": "latest",
+    "@pulumi/pulumi": "latest",
+    "graphql-auth-transformer": "latest",
+    "graphql-connection-transformer": "latest",
+    "graphql-dynamodb-transformer": "latest",
+    "graphql-elasticsearch-transformer": "latest",
+    "graphql-function-transformer": "latest",
+    "graphql-transformer-core": "latest"
   }
 }
