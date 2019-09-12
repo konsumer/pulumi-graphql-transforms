@@ -1,5 +1,6 @@
-export const transform = () => {}
 
-export const commit = () => {}
+export const transform = (typeDefs) => {}
+
+export const commit = (api, resources) => {}
 
 export default { transform, commit }
