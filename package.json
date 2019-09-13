@@ -2,11 +2,12 @@
   "name": "pulumi-graphql-transforms",
   "version": "0.0.0",
   "description": "Use amplify transforms in pulumi to create AWS resources.",
-  "source": "src/index.ts",
+  "source": "src/pulumi-graphql-transforms.ts",
   "main": "dist/pulumi-graphql-transforms.js",
   "module": "dist/pulumi-graphql-transforms.mjs",
   "unpkg": "dist/pulumi-graphql-transforms.umd.js",
   "files": [
+    "dist/pulumi-graphql-transforms.d.ts",
     "dist/pulumi-graphql-transforms.js",
     "dist/pulumi-graphql-transforms.mjs",
     "dist/pulumi-graphql-transforms.umd.js",

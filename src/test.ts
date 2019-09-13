@@ -1,4 +1,4 @@
-import { transform } from './index'
+import { transform } from './pulumi-graphql-transforms'
 
 const typeDefs = `
 type Blog @model {
