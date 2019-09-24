@@ -4,6 +4,11 @@ Use amplify transforms in pulumi to create AWS resources.
 
 I really like the [appsync/amplify transforms](https://aws-amplify.github.io/docs/cli-toolchain/graphql) for GraphQL. With a few schema-directives you can get a full API with auth, roles, dynamo, lambdas, etc.  This will allow you to make CRUD endpoints really fast.
 
+# WORK IN PROGRESS
+
+I don;t really have time to work on this right now, but I will probly pick it back up, later.
+
+
 ## usage
 
 Add it to your project:
